@@ -772,16 +772,16 @@
         }
 
         .video-container {
-          width: 100% !important;
-          height: auto !important; /* Let it be natural height on mobile */
-          min-height: 0 !important;
-          max-height: none !important;
-          padding: 0 !important;
-        }
-
-       .video-container video {
   width: 100% !important;
   height: auto !important;
+  min-height: 400px !important;
+  padding: 20px !important;
+}
+
+.video-container video {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 400px !important;
   aspect-ratio: 9 / 16 !important;
   object-fit: contain !important;
   background: #f3a699 !important;
