@@ -3,6 +3,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>
+      Kaytee Trudeau - RP (Qualifying). Neuro-affirming therapy for
+      perminenopausal and menopausal women.
+    </title>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -264,6 +269,120 @@
         .bento-contrainer {
           max-height: auto !important;
         }
+
+        .indie {
+          align-items: flex-start;
+        }
+      }
+      @media (max-width: 768px) {
+        /* Anchor the image to the top instead of centering it */
+        .hero-img {
+          top: 10% !important;
+          transform: none !important;
+          width: 45% !important; /* Slightly larger for mobile visibility */
+          left: 1rem !important;
+        }
+
+        /* Lower the credential */
+        .h1-second {
+          display: block;
+          margin-top: 40px; /* The 40px gap you wanted */
+          text-align: right; /* Keeps it aligned with the name above it */
+        }
+
+        /* Ensure the text container has enough room for the image */
+        .title-text {
+          padding-top: 5rem !important;
+        }
+
+        /* Style the mobile paragraph pill */
+        .mobile-p {
+          background: white;
+          color: #3b0764 !important;
+          padding: 1.25rem;
+          border-radius: 2rem;
+          border: 2px solid #f7be4e;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          margin-bottom: 30px !important;
+          width: 95% !important;
+          -webkit-text-fill-color: #3b0764 !important; /* Overrides the gradient clip if inherited */
+        }
+
+        /* 2. Fix the "other chunks" (Neuro-affirming Therapy, etc.) */
+        .mobile-title-nd {
+          display: block !important;
+          text-align: center !important; /* Forces these specific lines to center */
+          padding-right: 0 !important; /* Removes the desktop right padding */
+          width: 100% !important;
+          margin-left: 0 !important;
+          font-size: 22px !important;
+          margin-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .mobile-p-flex {
+          display: flex;
+          justify-content: center;
+        }
+        .hero-section {
+          margin-bottom: 0 !important;
+        }
+        body
+          > main
+          > section.hero-section.relative.mb-10
+          > div.title-text.relative.z-10.max-w-9xl.mx-auto.px-6.pt-24.pb-8
+          > h1
+          > span.text-white.block {
+          margin-bottom: 30px;
+        }
+        .indie {
+          flex-direction: column;
+          align-items: center;
+        }
+        .indie-mobile {
+          display: flex;
+          margin-top: 15px;
+          justify-content: center;
+        }
+        .text-xs {
+          padding-left: 10px;
+          text-align: left;
+        }
+        body
+          > main
+          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
+          > div:nth-child(2)
+          > div
+          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
+          > div.indie.flex.justify-between.mb-6
+          > div.text-right.indie-mobile
+          > span:nth-child(2) {
+          margin-right: 5px;
+        }
+        body
+          > main
+          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
+          > div:nth-child(2)
+          > div
+          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
+          > div.indie.flex.justify-between.mb-6
+          > div.text-right.indie-mobile
+          > span:nth-child(3) {
+          margin-right: 5px;
+        }
+        .purple-cards {
+          text-align: center;
+        }
+        .button-mob {
+          padding: 20px 20px;
+        }
+        .mobile-menu-top-link {
+          display: block !important;
+          font-family: 'Cooper Five Opti Black', cursive !important;
+          font-size: 2rem;
+          font-style: italic;
+          color: white !important;
+          text-decoration: none;
+        }
       }
     </style>
   </head>
@@ -283,8 +402,12 @@
           <span class="material-symbols-outlined sparkle s2">auto_awesome</span>
           <span class="material-symbols-outlined sparkle s3">auto_awesome</span>
           <span
-            class="text-3xl font-headline italic"
-            style="color: #eb4677; -webkit-text-stroke: 1px white"
+            class="font-headline italic"
+            style="
+              color: #eb4677;
+              -webkit-text-stroke: 1px white;
+              font-size: 30px;
+            "
           >
             Kaytee Trudeau
           </span>
@@ -514,7 +637,9 @@
       <a
         href="about.html"
         onclick="closeMobileMenu()"
+        class="mobile-menu-top-link"
         style="
+          display: block;
           font-family: 'Cooper Five Opti Black', cursive;
           font-size: 2rem;
           width: 100%;
@@ -581,25 +706,33 @@
             target="_blank"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Book a Session</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Book a Session</a
           >
           <a
             href="why-so-hard.html"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Why Is Everything Suddenly So Much Harder Now?</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Why Is Everything Suddenly So Much Harder Now?</a
           >
           <a
             href="resources.html"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Resources</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Resources</a
           >
           <a
             href="videos.html"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Videos on Neurodiversity</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Videos on Neurodiversity</a
           >
         </div>
       </div>
@@ -657,13 +790,17 @@
             target="_blank"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Behance Portfolio</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Behance Portfolio</a
           >
           <a
             href="shop.kayteetrudeau.design"
             onclick="closeMobileMenu()"
             style="color: white; text-decoration: none"
-            >Shop</a
+          >
+            <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
+            Shop</a
           >
         </div>
       </div>
@@ -671,7 +808,9 @@
       <a
         href="contact.html"
         onclick="closeMobileMenu()"
+        class="mobile-menu-top-link"
         style="
+          display: block;
           font-family: 'Cooper Five Opti Black', cursive;
           font-size: 2rem;
           font-style: italic;
