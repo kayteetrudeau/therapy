@@ -4,9 +4,29 @@
   <head>
     <meta charset="utf-8" />
     <title>
-      Kaytee Trudeau - RP (Qualifying). Neuro-affirming therapy for
-      perminenopausal and menopausal women.
+      About Kaytee Trudeau | Registered Psychotherapist (Qualifying) Ontario
     </title>
+    <meta
+      name="description"
+      content="Learn about Kaytee Trudeau, who offers therapy for neurodivergent perimenopausal and menopausal women in Ontario."
+    />
+    <link rel="canonical" href="https://kayteetrudeau.ca/about" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' height='32' viewBox='0 0 24 24' width='32'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm0 6l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z' fill='%23eb4677'/><path d='M11.5 9.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5z' fill='none' stroke='%23eb4677' stroke-width='3.5' stroke-linejoin='round' stroke-linecap='round'/></svg>"
+    />
+    <meta
+      property="og:title"
+      content="Kaytee Trudeau | Registered Psychotherapist (Qualifying) Ontario"
+    />
+    <meta
+      property="og:description"
+      content="Neuro-affirming therapy for neurodivergent perimenopausal and menopausal women in Ontario. Book your virtual session with Kaytee Trudeau now."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/rhino.png"
+    />
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -225,25 +245,8 @@
           'GRAD' 0,
           'opsz' 24;
       }
-      .grainy-bg {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        opacity: 0.04;
-      }
       .hazy-glow {
         filter: blur(80px);
-      }
-      .hero-section {
-        background-color: #d58d8d;
-        position: relative;
-      }
-      .hero-wave {
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        z-index: 2;
       }
       @media (min-width: 701px) {
         .desktop-hide {
@@ -251,31 +254,14 @@
         }
       }
       @media (max-width: 700px) {
-        .consult-img {
-          width: 100% !important;
-        }
-        .bento {
-          height: 24rem !important;
-        }
-        .hero-img {
-          width: 69% !important;
-        }
         .mobile-hide {
           display: none;
         }
         .title-text {
           padding-right: 0.5rem;
         }
-        .bento-contrainer {
-          max-height: auto !important;
-        }
-
-        .indie {
-          align-items: flex-start;
-        }
       }
       @media (max-width: 768px) {
-       
         /* Ensure the text container has enough room for the image */
         .title-text {
           padding-top: 5rem !important;
@@ -301,7 +287,7 @@
     <!-- Navigation Shell -->
     <nav
       class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 max-w-none backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.2)]"
-      style="background-color: #3b0764"
+      style="background-color: rgb(59 7 100 / 0.95)"
     >
       <!-- Logo — outside hover container -->
       <div class="flex items-center gap-2">
@@ -513,7 +499,7 @@
         class="btn-gradient mobile-hide text-center font-bold px-6 py-2 rounded-full text-white transition-all active:scale-95 hover:shadow-lg"
         href="https://book.carepatron.com/Kaytee-Trudeau/Kaytee?p=ChNyeiiOTy6oNQcq4hSiPQ&s=c8ul4p7U"
       >
-        Book Session
+        Book a Session
       </a>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
@@ -772,20 +758,19 @@
         }
 
         .video-container {
-  width: 100% !important;
-  height: auto !important;
-  min-height: 400px !important;
-  padding: 20px !important;
-}
+          width: 100% !important;
+          height: auto !important; /* Let it be natural height on mobile */
+          min-height: 0 !important;
+          max-height: none !important;
+          padding: 0 !important;
+        }
 
-.video-container video {
-  width: 100% !important;
-  height: 100% !important;
-  min-height: 400px !important;
-  aspect-ratio: 9 / 16 !important;
-  object-fit: contain !important;
-  background: #f3a699 !important;
-}
+        .video-container video {
+          width: 100% !important;
+          height: auto !important;
+          aspect-ratio: 9 / 16 !important;
+          object-fit: cover !important;
+        }
       }
     </style>
     <main
@@ -802,7 +787,8 @@
               display: block;
               border-radius: 1.5rem;
             "
-            src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/me.jpg?v=1778529071"
+            src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/me.jpg"
+            alt="kaytee trudeau with leaves in the background"
           />
         </div>
         <div
@@ -895,7 +881,7 @@
               border-radius: 1.5rem;
             "
             src="https://cdn.shopify.com/videos/c/o/v/8a8a028009b74e949cd7ee944b468e02.mp4"
-              poster="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Screenshot_2026-05-11_at_23.46.06.png"
+            poster="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/screenshot_of_kaytee_video.png"
             controls
           ></video>
         </div>
@@ -903,10 +889,7 @@
     </main>
 
     <footer style="background: #f3a699">
-      <div
-        class="font-label text-center text-xs p-4"
-        style="color: #3b0764"
-      >
+      <div class="font-label text-center text-xs p-4" style="color: #3b0764">
         ©2026 Kaytee Trudeau, Registered Psychotherapist (Qualifying) #20562.
         All Rights Reserved.
       </div>
