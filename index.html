@@ -267,7 +267,7 @@
         z-index: 2;
       }
       .hero-img {
-        top: 63%;
+        top: 50%;
       }
       @media (min-width: 701px) {
         .desktop-hide {
@@ -294,6 +294,17 @@
         .indie {
           align-items: flex-start;
         }
+      }
+      .bento-container1::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 0;
+      }
+      .about-p {
+        color: #ffffff;
+        width: 40rem;
       }
       @media (max-width: 768px) {
         /* Anchor the image to the top instead of centering it */
@@ -398,6 +409,9 @@
           font-style: italic;
           color: white !important;
           text-decoration: none;
+        }
+        .about-p {
+          width: 25rem;
         }
       }
     </style>
@@ -928,8 +942,8 @@
           "
         >
           <img
-            src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/rhino.png"
-            alt="Kaytee Trudeau"
+            src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.png"
+            alt="Kaytee Trudeau wearing glasses and laughing"
             style="
               width: 100%;
               height: auto;
@@ -1023,9 +1037,9 @@
               margin-left: auto;
             "
           >
-            Experience being authentically you, in a completely nonjudgmental,
-            safe space, with a fellow neurodivergent (AuDHD), perimenopausal
-            woman who gets it.
+            Experience being authentically you in a completely nonjudgmental
+            space with a fellow neurodivergent (AuDHD), perimenopausal woman who
+            gets it. Ontario only.
           </p>
         </div>
       </section>
@@ -1034,16 +1048,55 @@
           class="mobile-p text-lg leading-relaxed desktop-hide"
           style="text-align: center; width: 90%; margin: auto"
         >
-          Experience being authentically you, in a completely nonjudgmental,
-          safe space, with a fellow neurodivergent (AuDHD), perimenopausal woman
-          who gets it.
+          Experience being authentically you in a completely nonjudgmental space
+          with a fellow neurodivergent (AuDHD), perimenopausal woman who gets
+          it. Ontario only.
         </p>
       </div>
       <!-- The "Prize" Showcase: Bento Grid Style -->
       <section
         class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch pb-12"
       >
-        <!-- Card 1 wrapper -->
+        <!-- Card 1 wrapper 
+        <div class="purple-cards md:col-span-12 transition-all duration-500">
+          <div
+            class="bento-container bento-container1 group relative flex flex-col bg-surface-container rounded-[3rem] h-auto md:h-[350px] overflow-hidden transition-all duration-500"
+            style="
+              border: 3px solid #3b0764;
+              background-image: url(https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Normancopy.jpg);
+              background-position: center;
+              background-size: cover;
+            "
+          >
+            <div
+              class="p-12 flex flex-col justify-center"
+              style="align-items: center; position: relative; z-index: 1"
+            >
+              <div class="indie justify-center align-center mb-6">
+                <h3
+                  class="text-5xl font-headline text-center font-bold mb-2"
+                  style="color: #f7be4e; -webkit-text-stroke: 0.5px white"
+                >
+                  The TL;DR
+                </h3>
+              </div>
+              <p class="about-p mb-8 text-xl text-center leading-relaxed">
+                I'm a lifelong visual artist (and coder - built this site right
+                here!) turned therapist who speaks French & English fluently,
+                and often has my cats in session next to me.
+              </p>
+              <a
+                href="/about.html"
+                class="btn-gradient py-5 text-center rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
+                style="display: block; width: 15rem; margin: 0 auto"
+              >
+                Learn more here
+              </a>
+            </div>
+          </div>
+        </div>
+      -->
+        <!-- Card 2 wrapper -->
         <div class="purple-cards md:col-span-12 transition-all duration-500">
           <div
             class="group relative flex flex-col md:flex-row-reverse bg-surface-container-high rounded-[3rem] overflow-hidden transition-all duration-500"
@@ -1076,8 +1129,7 @@
               </div>
               <p class="mb-10 text-xl leading-relaxed" style="color: #ffffff">
                 Want to do a free consult before committing to a full session?
-                Book in for a free 20 minutes, and we'll meet up, see if we're a
-                fit to work together.
+                Book in for a free 20 minutes to see if we're a good fit.
               </p>
               <div class="flex flex-wrap justify-center gap-3 mb-8">
                 <span
@@ -1118,7 +1170,7 @@
           </div>
         </div>
 
-        <!-- Card 2 wrapper -->
+        <!-- Card 3 wrapper -->
 
         <div class="purple-cards md:col-span-12 transition-all duration-500">
           <div
@@ -1170,10 +1222,9 @@
                 </div>
               </div>
               <p class="mb-8 text-xl leading-relaxed" style="color: #ffffff">
-                Think of this as a conversation focused entirely on you - how
-                often do you get to have those? I'll offer practical strategies
-                when the moment calls for it. <br />Direct, empathetic, and at
-                your pace.
+                A conversation focused entirely on you - how often do you get to
+                have those? Practical strategies when required. Direct,
+                empathetic, and at your pace.
               </p>
               <div class="flex flex-wrap justify-center gap-3 mb-8">
                 <span
