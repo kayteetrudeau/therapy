@@ -30,7 +30,7 @@
     />
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,11 +54,358 @@
         chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
       }
     </script>
+    <style>
+      @font-face {
+        font-family: 'Cooper Five Opti Black';
+        src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/CooperFiveOpti-Black.ttf?v=1774447652')
+          format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        background-color: #f3e7fd;
+        font-size: 1rem;
+      }
+      .nav-link {
+        color: #ffffff;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 4px;
+        transition: all 0.2s ease;
+      }
+      .nav-link:hover {
+        color: #eb4677;
+        border-color: #f7be4e;
+        font-weight: 700;
+      }
+
+      .btn-gradient {
+        background: #eb4677;
+        border: 2px solid white;
+        background-clip: padding-box;
+        transition: all 0.3s ease;
+      }
+      .btn-gradient:hover {
+        background: transparent;
+        border: 2px solid #eb4677;
+        color: #eb4677;
+      }
+      .card-shadow {
+        position: relative;
+        border-radius: 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .card-shadow::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 3rem;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transform: translate(10px, 10px);
+        background: rgba(255, 255, 255, 0.9);
+        z-index: -1;
+      }
+      .card-shadow::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 3rem;
+        transform: translate(13px, 13px);
+        background: #3b0764;
+        z-index: -2;
+      }
+      .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(59, 7, 100, 0.98);
+        z-index: 200;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 8rem;
+        justify-content: flex-start;
+        gap: 2rem;
+      }
+      .mobile-menu.open {
+        display: flex;
+        align-items: flex-start;
+        padding: 2rem;
+      }
+      @keyframes wave-slide {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      /* The Sparkle Animation */
+      @keyframes retro-sparkle {
+        0%,
+        100% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+      }
+
+      .sparkle-container {
+        position: relative;
+        display: inline-block;
+      }
+
+      .sparkle {
+        position: absolute;
+        color: #f7be4e; /* Your secondary yellow color */
+        font-size: 1.2rem;
+        pointer-events: none;
+        animation: retro-sparkle 2s infinite ease-in-out;
+        opacity: 0;
+      }
+
+      /* Positioning individual sparkles around the name */
+      .s1 {
+        top: -10px;
+        left: -15px;
+        animation-delay: 0s;
+      }
+      .s2 {
+        top: -15px;
+        right: -10px;
+        animation-delay: 0.7s;
+        font-size: 0.9rem;
+      }
+      .s3 {
+        bottom: -14px;
+        right: 108px;
+        animation-delay: 1.3s;
+        font-size: 1rem;
+      }
+    </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#eb4677',
+              secondary: '#f7be4e',
+              tertiary: '#0abab5',
+              'on-primary': '#ffffff',
+              'on-secondary': '#3a2a00',
+              'on-tertiary': '#ffffff',
+              surface: '#ffffff',
+              'on-surface': '#1a1a2e',
+              'surface-container': 'rgb(59,7,100)',
+              'surface-container-high': 'rgb(59,7,100)',
+              'surface-container-highest': 'rgb(75,15,120)',
+              'on-surface-variant': '#c9b8e8',
+              outline: '#9e95a8',
+              'outline-variant': 'rgba(255,255,255,0.15)',
+              'primary-container': '#ffd6e4',
+              'secondary-container': '#fff0c8',
+              'tertiary-container': '#c8f5f3',
+              'on-primary-container': '#4c0022',
+              'on-secondary-container': '#3a2a00',
+              'on-tertiary-container': '#003e39',
+              error: '#ba1a1a',
+              background: '#ffffff',
+              'on-background': '#1a1a2e',
+              'inverse-surface': '#2d2535',
+              'surface-variant': '#f0eaf5',
+            },
+            fontFamily: {
+              headline: ['Cooper Five Opti Black', 'cursive'],
+              body: ['Fraunces', 'serif'],
+              label: ['Fraunces', 'serif'],
+            },
+            borderRadius: {
+              DEFAULT: '1rem',
+              lg: '2rem',
+              xl: '3rem',
+              full: '9999px',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24;
+      }
+      .grainy-bg {
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.04;
+      }
+      .hazy-glow {
+        filter: blur(80px);
+      }
+      .hero-section {
+        background-color: #d58d8d;
+        position: relative;
+      }
+      .hero-wave {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        z-index: 2;
+      }
+      @media (min-width: 701px) {
+        .desktop-hide {
+          display: none;
+        }
+      }
+      @media (max-width: 700px) {
+        .consult-img {
+          width: 100% !important;
+        }
+        .bento {
+          height: 24rem !important;
+        }
+        .hero-img {
+          width: 69% !important;
+        }
+        .mobile-hide {
+          display: none;
+        }
+        .title-text {
+          padding-right: 0.5rem;
+        }
+        .bento-contrainer {
+          max-height: auto !important;
+        }
+
+        .indie {
+          align-items: flex-start;
+        }
+      }
+      @media (max-width: 768px) {
+        /* Anchor the image to the top instead of centering it */
+        .hero-img {
+          top: 10% !important;
+          transform: none !important;
+          width: 45% !important; /* Slightly larger for mobile visibility */
+          left: 1rem !important;
+        }
+
+        /* Lower the credential */
+        .h1-second {
+          display: block;
+          margin-top: 40px; /* The 40px gap you wanted */
+          text-align: right; /* Keeps it aligned with the name above it */
+        }
+
+        /* Ensure the text container has enough room for the image */
+        .title-text {
+          padding-top: 5rem !important;
+        }
+
+        /* Style the mobile paragraph pill */
+        .mobile-p {
+          background: white;
+          color: #3b0764 !important;
+          padding: 1.25rem;
+          border-radius: 2rem;
+          border: 2px solid #f7be4e;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          margin-bottom: 30px !important;
+          width: 95% !important;
+          -webkit-text-fill-color: #3b0764 !important; /* Overrides the gradient clip if inherited */
+        }
+
+        /* 2. Fix the "other chunks" (Neuro-affirming Therapy, etc.) */
+        .mobile-title-nd {
+          display: block !important;
+          text-align: center !important; /* Forces these specific lines to center */
+          padding-right: 0 !important; /* Removes the desktop right padding */
+          width: 100% !important;
+          margin-left: 0 !important;
+          font-size: 22px !important;
+          margin-right: 0 !important;
+          padding-left: 0 !important;
+        }
+        .mobile-p-flex {
+          display: flex;
+          justify-content: center;
+        }
+        .hero-section {
+          margin-bottom: 0 !important;
+        }
+        body
+          > main
+          > section.hero-section.relative.mb-10
+          > div.title-text.relative.z-10.max-w-9xl.mx-auto.px-6.pt-24.pb-8
+          > h1
+          > span.text-white.block {
+          margin-bottom: 30px;
+        }
+        .indie {
+          flex-direction: column;
+          align-items: center;
+        }
+        .indie-mobile {
+          display: flex;
+          margin-top: 15px;
+          justify-content: center;
+        }
+        .text-xs {
+          padding-left: 10px;
+          text-align: left;
+        }
+        body
+          > main
+          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
+          > div:nth-child(2)
+          > div
+          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
+          > div.indie.flex.justify-between.mb-6
+          > div.text-right.indie-mobile
+          > span:nth-child(2) {
+          margin-right: 5px;
+        }
+        body
+          > main
+          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
+          > div:nth-child(2)
+          > div
+          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
+          > div.indie.flex.justify-between.mb-6
+          > div.text-right.indie-mobile
+          > span:nth-child(3) {
+          margin-right: 5px;
+        }
+        .purple-cards {
+          text-align: center;
+        }
+        .button-mob {
+          padding: 20px 20px;
+        }
+        .mobile-menu-top-link {
+          display: block !important;
+          font-family: 'Cooper Five Opti Black', cursive !important;
+          font-size: 2rem;
+          font-style: italic;
+          color: white !important;
+          text-decoration: none;
+        }
+      }
+    </style>
   </head>
   <body class="bg-white text-on-surface font-body selection:bg-tertiary/30">
     <!-- Grainy Overlay -->
@@ -134,6 +481,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Book a Session</span>
@@ -146,6 +495,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Why Is Everything Suddenly So Much Harder Now?</span>
@@ -158,6 +509,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Resources</span>
@@ -170,6 +523,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Videos on Neurodiversity</span>
@@ -219,6 +574,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Behance Portfolio</span>
@@ -231,6 +588,8 @@
                   text-decoration: none;
                   transition: background 0.15s;
                 "
+                onmouseover="this.style.background = 'rgba(235,70,119,0.15)'"
+                onmouseout="this.style.background = 'transparent'"
               >
                 <span style="font-size: 1.1rem; color: #f7be4e">✦</span>
                 <span>Shop</span>
@@ -483,6 +842,133 @@
         >Contact</a
       >
     </div>
+    <style>
+      /* Big Category Pill */
+      .category-pill {
+        display: inline-block;
+        background-color: #3b0764;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        font-family:
+          'Cooper Five Opti Black', serif; /* Or your headline font */
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Resource Card (Small Pill) */
+      .resource-pill {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+        background-color: white;
+        border: 2px solid #f3a699; /* Your peach color */
+        border-radius: 1.5rem;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        height: 100%;
+      }
+
+      /* Hover effect for clickable pills */
+      a.resource-pill:hover {
+        box-shadow: 0 4px 12px rgba(243, 166, 153, 0.3);
+        transform: translateY(-2px);
+        border-color: #f7be4e; /* Yellow on hover */
+      }
+
+      /* Label inside the pill (Article, Video, etc) */
+      .pill-label {
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #eb4677;
+        margin-bottom: 0.25rem;
+      }
+
+      /* Title inside the pill */
+      .pill-title {
+        font-weight: 700;
+        color: #3b0764;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      /* Category Subheaders */
+      .sub-group-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #eb4677;
+        margin-bottom: 0.75rem;
+        margin-left: 1rem;
+      }
+    </style>
+
+    <style>
+      /* Big Category Pill */
+      .category-pill {
+        display: inline-block;
+        background-color: #3b0764;
+        color: white;
+        padding: 0.75rem 2rem;
+        border-radius: 9999px;
+        font-family: 'Cooper Five Opti Black', serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 2rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Resource Card (Small Pill) */
+      .resource-pill {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem;
+        background-color: white;
+        border: 2px solid #f7be4e;
+        border-radius: 1.5rem;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none;
+        height: 100%;
+      }
+
+      /* Hover effect for clickable pills */
+      a.resource-pill:hover {
+        box-shadow: 0 4px 12px rgba(243, 166, 153, 0.3);
+        transform: translateY(-2px);
+        border-color: #f7be4e;
+      }
+
+      .pill-label {
+        font-size: 10px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #eb4677;
+        margin-bottom: 0.25rem;
+      }
+
+      .pill-title {
+        font-weight: 700;
+        color: #3b0764;
+        font-size: 1rem;
+        line-height: 1.4;
+      }
+
+      .sub-group-label {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #eb4677;
+        margin-bottom: 0.75rem;
+        margin-left: 1rem;
+      }
+    </style>
 
     <main class="pt-24">
       <h1
@@ -803,14 +1289,6 @@
                 >
                   <span class="pill-label">Book</span>
                   <span class="pill-title">Who Deserves Your Love</span>
-                </a>
-                <a
-                  href="https://www.indigo.ca/products/when-things-fall-apart"
-                  target="_blank"
-                  class="resource-pill"
-                >
-                  <span class="pill-label">Book</span>
-                  <span class="pill-title">When Things Fall Apart</span>
                 </a>
                 <a
                   href="https://www.indigo.ca/en-ca/how-to-keep-house-while-drowning-a-gentle-approach-to-cleaning-and-organizing/9781668002841.html"
