@@ -820,7 +820,7 @@
       width: 100%;
     }
     .responsive-bg-image {
-      background-image: url("https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_in_office.jpg?width=1200");
+      background-image: url("https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_in_office.jpg?width=1200&format=webp");
     }
     
     /* Mobile responsive shift */
@@ -923,23 +923,21 @@ width: 100%;
             ></br></br> If you're not in Ontario and would like to work with me, please book a free consult with me through <a style="text-decoration: underline" href="https://saferspacestherapy.janeapp.com/locations/safer-spaces/book#/staff_member/28">Safer Spaces: An Intersectional Therapy Collective</a>
           </p>
         </div>
-        <div
-          class="video-container"
-          style="width: 100%; overflow: hidden; padding: 20px"
-        >
-          <video
-            style="
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              display: block;
-              border-radius: 1.5rem;
-            "
-            src="https://cdn.shopify.com/videos/c/o/v/43a85d08a9e9406cae73b7aef0f4cc10.mp4"
-            poster="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/screenshot_of_kaytee_video.png"
-            controls
-          ></video>
-        </div>
+       <!-- Added a wrapper to center the constrained video and keep layout isolated -->
+<div class="video-container" style="width: 100%; overflow: hidden; padding: 20px; display: flex; justify-content: center;">
+  <video
+    style="
+      width: 100%; 
+      max-width: 650px; /* Prevents the video from blowing up to 100% screen width */
+      height: auto; 
+      display: block; 
+      border-radius: 1.5rem;
+    "
+    src="https://cdn.shopify.com/videos/c/o/v/43a85d08a9e9406cae73b7aef0f4cc10.mp4"
+poster="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/screenshot_of_kaytee_video.png&format=webp"
+    controls
+  ></video>
+</div>
       </div>
     </main>
 
