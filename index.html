@@ -3,13 +3,28 @@
 <html lang="en">
   <head>
   <!-- 1. Inline just the core layout wrappers so the browser structures the grid instantly -->
-<style>
-  html, body { background-color: #ffffff; margin: 0; padding: 0; }
-  main { display: block; min-height: 100vh; position: relative; top: 50px; }
-</style>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 1. Inline the critical desktop column structures so they cannot bunch up -->
+    <style>
+      html, body { background-color: #ffffff; margin: 0; padding: 0; }
+      main { display: block; min-height: 100vh; position: relative; top: 50px; }
+      
+      /* Force the main layout grid to hold its desktop shape immediately */
+      @media (min-width: 768px) {
+        .grid { display: grid !important; }
+        .flex { display: flex !important; }
+        /* Add your main desktop layout wrapper class below if it uses a specific name */
+        main .grid, main .flex { 
+          grid-template-columns: repeat(12, minmax(0, 1fr)); 
+          gap: 1.5rem; 
+        }
+      }
+    </style>
 
-<!-- 2. Use a standard non-blocking pattern that modern desktop browsers parse cleanly -->
-<link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <!-- 2. Keep the non-blocking stylesheet loading -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://cdn.shopify.com">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZFQVVL7S4"></script>
