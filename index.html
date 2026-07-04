@@ -595,23 +595,23 @@
           sizes="494px">
 
   <!-- Mobile Image (Fallback / Default for under 601px) -->
-  <img src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp" 
-       srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp 200w,
-               https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp 400w" 
-       sizes="200px" 
-       width="400" 
-       height="493"
-       alt="Kaytee Trudeau with a picture of mountains in the background" 
-       fetchpriority="high"
-       loading="eager"
-       style="
-         width: 100%;
-         height: auto;
-         object-fit: cover;
-         object-position: center top;
-         border-radius: 1.5rem;
-       "
-  />
+ <img src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp&width=400" 
+     srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp&width=200 200w,
+             https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mobile_kaytee_mountains.jpg?format=webp&width=400 400w" 
+     sizes="(max-width: 600px) 200px, 400px" 
+     width="400" 
+     height="493"
+     alt="Kaytee Trudeau with a picture of mountains in the background" 
+     fetchpriority="high"
+     loading="eager"
+     style="
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       object-position: center top;
+       border-radius: 1.5rem;
+     "
+/>
 </picture>
         </div>
 
@@ -962,17 +962,24 @@
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden flex items-center justify-center md:justify-end"
             >
-             <img alt="Couples therapy - holding hands" 
-     class="consult-img transition-transform duration-1000 group-hover:scale-110" 
-     src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_1000x.jpg?width=400&format=webp" 
-     srcset="
-       https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_1000x.jpg?width=400&format=webp 400w,
-       https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_1000x.jpg?width=800&format=webp 800w" 
-     sizes="(max-width: 600px) 384px, 494px" 
-     style="width: 100%; height: 100%; object-fit: cover" 
-     loading="lazy" 
-     width="494" 
-     height="494">
+            <picture style="width: 100%; height: 100%; display: block;">
+  <!-- Desktop / Tablet Image (601px screens and up) -->
+  <source media="(min-width: 601px)" 
+          srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_1000x.jpg?width=400&format=webp 400w,
+                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_1000x.jpg?width=800&format=webp 800w"
+          sizes="494px">
+
+  <!-- Mobile Image (Fallback / Default for under 601px) -->
+  <img alt="Couples therapy - holding hands" 
+       class="consult-img transition-transform duration-1000 group-hover:scale-110" 
+       src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_small2.jpg?width=400&format=webp" 
+       srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_small2.jpg?width=400&format=webp 400w" 
+       sizes="384px" 
+       style="width: 100%; height: 100%; object-fit: cover" 
+       loading="lazy" 
+       width="494" 
+       height="494">
+</picture>
               <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
 <div
   class="absolute inset-0 hidden md:block"
