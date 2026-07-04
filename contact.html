@@ -2,6 +2,7 @@
 
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZFQVVL7S4"></script>
 <script>
@@ -36,7 +37,6 @@
     />
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       function openMobileMenu() {
         document.getElementById('mobileMenu').classList.add('open');
@@ -225,52 +225,6 @@
         font-size: 1rem;
       }
     </style>
-    <script id="tailwind-config">
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#eb4677',
-              secondary: '#f7be4e',
-              tertiary: '#0abab5',
-              'on-primary': '#ffffff',
-              'on-secondary': '#3a2a00',
-              'on-tertiary': '#ffffff',
-              surface: '#ffffff',
-              'on-surface': '#1a1a2e',
-              'surface-container': 'rgb(59,7,100)',
-              'surface-container-high': 'rgb(59,7,100)',
-              'surface-container-highest': 'rgb(75,15,120)',
-              'on-surface-variant': '#c9b8e8',
-              outline: '#9e95a8',
-              'outline-variant': 'rgba(255,255,255,0.15)',
-              'primary-container': '#ffd6e4',
-              'secondary-container': '#fff0c8',
-              'tertiary-container': '#c8f5f3',
-              'on-primary-container': '#4c0022',
-              'on-secondary-container': '#3a2a00',
-              'on-tertiary-container': '#003e39',
-              error: '#ba1a1a',
-              background: '#ffffff',
-              'on-background': '#1a1a2e',
-              'inverse-surface': '#2d2535',
-              'surface-variant': '#f0eaf5',
-            },
-            fontFamily: {
-              headline: ['Cooper Five Opti Black', 'cursive'],
-              body: ['Fraunces', 'serif'],
-              label: ['Fraunces', 'serif'],
-            },
-            borderRadius: {
-              DEFAULT: '1rem',
-              lg: '2rem',
-              xl: '3rem',
-              full: '9999px',
-            },
-          },
-        },
-      };
-    </script>
     <style>
       .material-symbols-outlined {
         font-variation-settings:
@@ -282,6 +236,22 @@
       .hazy-glow {
         filter: blur(80px);
       }
+
+.blur-3xl {
+  filter: blur(64px);
+}
+.border-\[\#f3a699\]\/30 {
+    border-color: rgb(243 166 153 / 0.3);
+}
+.bg-\[\#f3e7fd\]\/30 {
+    background-color: rgb(243 231 253 / 0.3);
+}
+.border-\[\#f3a699\]\/20 {
+    border-color: rgb(243 166 153 / 0.2);
+}
+.bg-\[\#f7be4e\]\/20 {
+    background-color: rgb(247 190 78 / 0.2);
+}
       @media (min-width: 701px) {
         .desktop-hide {
           display: none;
