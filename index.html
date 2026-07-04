@@ -2,6 +2,7 @@
 
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZFQVVL7S4"></script>
 <meta name="google-site-verification" content="LNLmvGMLxKH1HmLRe_MvkUwIt74SkBbCM1gCQ_IES4U" />
@@ -37,7 +38,6 @@
     />
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       function openMobileMenu() {
         document.getElementById('mobileMenu').classList.add('open');
@@ -55,410 +55,6 @@
         chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
       }
     </script>
-    <style>
-      @font-face {
-        font-family: 'Cooper Five Opti Black';
-        src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/CooperFiveOpti-Black.ttf?v=1774447652')
-          format('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-      /* fraunces-regular - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 400;
-  src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/fraunces-v38-latin-regular.woff2') format('woff2');
-}
-
-/* fraunces-italic - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Fraunces';
-  font-style: italic;
-  font-weight: 400;
-  src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/fraunces-v38-latin-italic.woff2') format('woff2');
-}
-
-/* fraunces-500 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 500;
-  src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/fraunces-v38-latin-500.woff2') format('woff2');
-}
-
-/* fraunces-700 - latin */
-@font-face {
-  font-display: swap;
-  font-family: 'Fraunces';
-  font-style: normal;
-  font-weight: 700;
-  src: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/fraunces-v38-latin-700.woff2') format('woff2');
-}
-      body {
-        background-color: #f3e7fd;
-        font-size: 1rem;
-      }
-      .nav-link {
-        color: #ffffff;
-        font-weight: 500;
-        border-bottom: 2px solid transparent;
-        padding-bottom: 4px;
-        transition: all 0.2s ease;
-      }
-      .nav-link:hover {
-        color: #eb4677;
-        border-color: #f7be4e;
-        font-weight: 700;
-      }
-
-      .btn-gradient {
-        background: #eb4677;
-        border: 2px solid white;
-        background-clip: padding-box;
-        transition: all 0.3s ease;
-      }
-      .btn-gradient:hover {
-        background: transparent;
-        border: 2px solid #eb4677;
-        color: #eb4677;
-      }
-      .card-shadow {
-        position: relative;
-        border-radius: 3rem;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-      .card-shadow::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 3rem;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        transform: translate(10px, 10px);
-        background: rgba(255, 255, 255, 0.9);
-        z-index: -1;
-      }
-      .card-shadow::after {
-        content: '';
-        position: absolute;
-        inset: 0;
-        border-radius: 3rem;
-        transform: translate(13px, 13px);
-        background: #3b0764;
-        z-index: -2;
-      }
-      .mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(59, 7, 100, 0.98);
-        z-index: 200;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 8rem;
-        justify-content: flex-start;
-        gap: 2rem;
-      }
-      .mobile-menu.open {
-        display: flex;
-        align-items: flex-start;
-        padding: 2rem;
-      }
-      @keyframes wave-slide {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-      /* The Sparkle Animation */
-      @keyframes retro-sparkle {
-        0%,
-        100% {
-          transform: scale(0);
-          opacity: 0;
-        }
-        50% {
-          transform: scale(1.2);
-          opacity: 1;
-        }
-      }
-
-      .sparkle-container {
-        position: relative;
-        display: inline-block;
-      }
-
-      .sparkle {
-        position: absolute;
-        color: #f7be4e; /* Your secondary yellow color */
-        font-size: 1.2rem;
-        pointer-events: none;
-        animation: retro-sparkle 2s infinite ease-in-out;
-        opacity: 0;
-      }
-
-      /* Positioning individual sparkles around the name */
-      .s1 {
-        top: -10px;
-        left: -15px;
-        animation-delay: 0s;
-      }
-      .s2 {
-        top: -15px;
-        right: -10px;
-        animation-delay: 0.7s;
-        font-size: 0.9rem;
-      }
-      .s3 {
-        bottom: -14px;
-        right: 108px;
-        animation-delay: 1.3s;
-        font-size: 1rem;
-      }
-    </style>
-    <script id="tailwind-config">
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: '#eb4677',
-              secondary: '#f7be4e',
-              tertiary: '#0abab5',
-              'on-primary': '#ffffff',
-              'on-secondary': '#3a2a00',
-              'on-tertiary': '#ffffff',
-              surface: '#ffffff',
-              'on-surface': '#1a1a2e',
-              'surface-container': 'rgb(59,7,100)',
-              'surface-container-high': 'rgb(59,7,100)',
-              'surface-container-highest': 'rgb(75,15,120)',
-              'on-surface-variant': '#c9b8e8',
-              outline: '#9e95a8',
-              'outline-variant': 'rgba(255,255,255,0.15)',
-              'primary-container': '#ffd6e4',
-              'secondary-container': '#fff0c8',
-              'tertiary-container': '#c8f5f3',
-              'on-primary-container': '#4c0022',
-              'on-secondary-container': '#3a2a00',
-              'on-tertiary-container': '#003e39',
-              error: '#ba1a1a',
-              background: '#ffffff',
-              'on-background': '#1a1a2e',
-              'inverse-surface': '#2d2535',
-              'surface-variant': '#f0eaf5',
-            },
-            fontFamily: {
-              headline: ['Cooper Five Opti Black', 'cursive'],
-              body: ['Fraunces', 'serif'],
-              label: ['Fraunces', 'serif'],
-            },
-            borderRadius: {
-              DEFAULT: '1rem',
-              lg: '2rem',
-              xl: '3rem',
-              full: '9999px',
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          'FILL' 0,
-          'wght' 400,
-          'GRAD' 0,
-          'opsz' 24;
-      }
-      .grainy-bg {
-        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        opacity: 0.04;
-      }
-      .hazy-glow {
-        filter: blur(80px);
-      }
-      .hero-section {
-        background-color: #d58d8d;
-        position: relative;
-        overflow: hidden;
-      }
-      .hero-wave {
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        z-index: 2;
-      }
-      .hero-img {
-        top: 50%;
-      }
-      @media (min-width: 701px) {
-        .desktop-hide {
-          display: none;
-        }
-      }
-      @media (max-width: 700px) {
-        .consult-img {
-          width: 100% !important;
-        }
-        .bento {
-          height: 24rem !important;
-        }
-        .mobile-hide {
-          display: none;
-        }
-        .title-text {
-          padding-right: 0.5rem;
-        }
-        .bento-container {
-          max-height: auto !important;
-        }
-
-        .indie {
-          align-items: flex-start;
-        }
-      }
-      .bento-container1::before {
-        content: '';
-        position: absolute;
-        inset: 0;
-        background: rgba(0, 0, 0, 0.45);
-        z-index: 0;
-      }
-      .about-p {
-        color: #ffffff;
-        width: 40rem;
-      }
-      @media (max-width: 768px) {
-        /* Anchor the image to the top instead of centering it */
-        .hero-img {
-          top: 18% !important;
-          transform: none !important;
-          width: 45% !important; /* Slightly larger for mobile visibility */
-          left: 1rem !important;
-        }
-        body
-          > main
-          > section.hero-section.relative.mb-10
-          > div.title-text.relative.z-10.max-w-9xl.mx-auto.px-6.pt-20.pb-8
-          > h1
-          > span.block.mt-2.mobile-title-nd {
-          margin-top: 1.5rem;
-        }
-        h1 {
-          margin-bottom: 0px !important;
-        }
-        /* Lower the credential */
-        .h1-second {
-          display: block;
-          margin-top: 40px; /* The 40px gap you wanted */
-          text-align: right; /* Keeps it aligned with the name above it */
-        }
-
-        /* Style the mobile paragraph pill */
-        .mobile-p {
-          background: white;
-          color: #3b0764 !important;
-          padding: 1.25rem;
-          border-radius: 2rem;
-          border: 2px solid #f7be4e;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-          margin-bottom: 30px !important;
-          width: 95% !important;
-          -webkit-text-fill-color: #3b0764 !important; /* Overrides the gradient clip if inherited */
-        }
-
-        /* 2. Fix the "other chunks" (Neuro-affirming Therapy, etc.) */
-        .mobile-title-nd {
-          display: block !important;
-          text-align: center !important; /* Forces these specific lines to center */
-          padding-right: 0 !important; /* Removes the desktop right padding */
-          width: 100% !important;
-          margin-left: 0 !important;
-          font-size: 22px !important;
-          margin-right: 0 !important;
-          padding-left: 0 !important;
-        }
-        .mobile-p-flex {
-          display: flex;
-          justify-content: center;
-        }
-        .hero-section {
-          margin-bottom: 0 !important;
-        }
-        body
-          > main
-          > section.hero-section.relative.mb-10
-          > div.title-text.relative.z-10.max-w-9xl.mx-auto.px-6.pt-24.pb-8
-          > h1
-          > span.text-white.block {
-          margin-bottom: 30px;
-        }
-        .indie {
-          flex-direction: column;
-          align-items: center;
-        }
-        .indie-mobile {
-          display: flex;
-          margin-top: 15px;
-          justify-content: center;
-        }
-        .text-xs {
-          padding-left: 10px;
-          text-align: left;
-        }
-        body
-          > main
-          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
-          > div:nth-child(2)
-          > div
-          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
-          > div.indie.flex.justify-between.mb-6
-          > div.text-right.indie-mobile
-          > span:nth-child(2) {
-          margin-right: 5px;
-        }
-        body
-          > main
-          > section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12
-          > div:nth-child(2)
-          > div
-          > div.md\:w-1\/2.p-12.flex.flex-col.justify-center
-          > div.indie.flex.justify-between.mb-6
-          > div.text-right.indie-mobile
-          > span:nth-child(3) {
-          margin-right: 5px;
-        }
-        .purple-cards {
-          text-align: center;
-        }
-        .button-mob {
-          padding: 20px 20px;
-        }
-        .mobile-menu-top-link {
-          display: block !important;
-          font-family: 'Cooper Five Opti Black', cursive !important;
-          font-size: 2rem;
-          font-style: italic;
-          color: white !important;
-          text-decoration: none;
-        }
-        .about-p {
-          width: 20rem;
-        }
-      }
-    </style>
   </head>
   <body class="bg-white font-body selection:bg-tertiary/30">
     <!-- Grainy Overlay -->
@@ -1121,7 +717,7 @@
               <a
                 href="/about.html"
                 class="btn-gradient py-5 text-center rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
-                style="display: block; width: 15rem; margin: 0 auto; font-size: 1.25em;"
+                style="display: block; width: 16rem; margin: 0 auto; font-size: 1.25em;"
               >
                 Learn more here
               </a>
@@ -1139,23 +735,28 @@
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden flex items-center justify-center md:justify-end"
             >
               <img alt="Vibe check with Kaytee Trudeau laughing" 
-     class="consult-img transition-transform duration-1000 group-hover:scale-110" 
-     src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=400&format=webp" 
-     srcset="
-       https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=400&format=webp 400w,
-       https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=800&format=webp 800w" 
-     sizes="(max-width: 600px) 360px, 494px" 
-     style="width: 70%; height: 100%; object-fit: cover" 
-     loading="lazy" 
-     width="494" 
-     height="494"
+                class="consult-img transition-transform duration-1000 group-hover:scale-110" 
+                src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=400&format=webp" 
+                srcset="
+                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=400&format=webp 400w,
+                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino.jpg?width=800&format=webp 800w" 
+                sizes="(max-width: 600px) 360px, 494px" 
+                style="width: 70%; height: 100%; object-fit: cover" 
+                loading="lazy" 
+                width="494" 
+                height="494"
               />
-              <div
-                class="absolute inset-0 bg-gradient-to-l from-transparent to-surface-container-high hidden md:block"
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent md:hidden"
-              ></div>
+              <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
+            <div
+              class="absolute inset-0 hidden md:block"
+              style="background-image: linear-gradient(to left, transparent, rgb(59, 7, 100));"
+            ></div>
+
+            <!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
+            <div
+              class="absolute inset-0 md:hidden"
+              style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
+            ></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div class="mb-8">
@@ -1226,18 +827,23 @@
                   https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mitch-nJupV3AOP-U-unsplash_1d7c816c-8702-4241-88ef-507d91395101_600x.jpg?format=webp   600w,
                   https://cdn.shopify.com/s/files/1/0006/9556/6392/files/mitch-nJupV3AOP-U-unsplash_1d7c816c-8702-4241-88ef-507d91395101_1000x.jpg?format=webp 1000w
                 "
-                sizes="(max-width: 768px) 100vw, 613px"
                 alt="Photo of brick wall saying 'How are you really?' by Mitch on Unsplash"
-                loading="lazy"
-                width="613"
-                height="747"
+                sizes="(max-width: 600px) 360px, 494px" 
+                loading="lazy" 
+                width="494" 
+                height="494"
               />
-              <div
-                class="absolute inset-0 bg-gradient-to-r from-transparent to-surface-container hidden md:block"
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-surface-container to-transparent md:hidden"
-              ></div>
+              <!-- Desktop Gradient: Right to Left fade (transparent on the right, purple on the left) -->
+<div
+  class="absolute inset-0 hidden md:block"
+  style="background-image: linear-gradient(to right, transparent, rgb(59, 7, 100));"
+></div>
+
+<!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
+<div
+  class="absolute inset-0 md:hidden"
+  style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
+></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div class="indie flex justify-between mb-6">
@@ -1333,12 +939,17 @@
      loading="lazy" 
      width="494" 
      height="494">
-              <div
-                class="absolute inset-0 bg-gradient-to-l from-transparent to-surface-container-high hidden md:block"
-              ></div>
-              <div
-                class="absolute inset-0 bg-gradient-to-t from-surface-container-high to-transparent md:hidden"
-              ></div>
+              <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
+<div
+  class="absolute inset-0 hidden md:block"
+  style="background-image: linear-gradient(to left, transparent, rgb(59, 7, 100));"
+></div>
+
+<!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
+<div
+  class="absolute inset-0 md:hidden"
+  style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
+></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div
