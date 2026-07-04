@@ -301,6 +301,10 @@ height: auto;
   border-radius: 3rem;
 }
 
+.rounded-\[2rem\]{
+  border-radius: 2rem;
+}
+
 :hover\:shadow-xl{
     transition: box-shadow 0.3s ease-in-out;
 }
