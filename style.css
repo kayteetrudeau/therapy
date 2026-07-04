@@ -320,3 +320,11 @@ color-mix(#f7be4e 20%, transparent);
 .blur3xl {
   filter: blur(64px);
 }
+picture.vibe-check-pic {
+ style="width: 70%; height: 100%;"
+}
+
+@media (max-width: 768px) {
+picture.vibe-check-pic {
+ style="width: 100%;"
+}
