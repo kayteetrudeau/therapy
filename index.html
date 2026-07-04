@@ -749,18 +749,24 @@
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden flex items-center justify-center md:justify-end"
             >
-              <img alt="Vibe check with Kaytee Trudeau laughing" 
-                class="consult-img transition-transform duration-1000 group-hover:scale-110" 
-                src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino2.jpg?width=400&format=webp" 
-                srcset="
-                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino2.jpg?width=400&format=webp 400w,
-                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino2.jpg?width=800&format=webp 800w" 
-                sizes="(max-width: 600px) 360px, 494px" 
-                style="width: 70%; height: 100%; object-fit: cover" 
-                loading="lazy" 
-                width="494" 
-                height="494"
-              />
+              <picture style="width: 70%; height: 100%;">
+  <!-- Desktop / Tablet Image (601px screens and up) -->
+  <source media="(min-width: 601px)" 
+          srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_at_rhino2.jpg?width=800&format=webp 800w"
+          sizes="494px">
+
+  <!-- Mobile Image (Fallback / Default for under 601px) -->
+  <img alt="Vibe check with Kaytee Trudeau laughing" 
+       class="consult-img transition-transform duration-1000 group-hover:scale-110" 
+       src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/small_kaytee_rhino.jpg?format=webp" 
+       srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/small_kaytee_rhino.jpg?format=webp 400w" 
+       sizes="360px" 
+       style="width: 100%; height: 100%; object-fit: cover" 
+       loading="lazy" 
+       width="494" 
+       height="494"
+  />
+</picture>
               <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
             <div
               class="absolute inset-0 hidden md:block"
@@ -835,17 +841,24 @@
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden"
             >
-             <img 
-  src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?format=webp" 
-  srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?width=400&format=webp 400w, 
-          https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?width=700&format=webp 700w,
-          https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?format=webp 985w"
-  sizes="(max-width: 600px) 358px, 494px"
-  width="494" 
-  height="494"
-  loading="lazy"
-  alt="Photo of brick wall saying 'How are you really?'"
-  class="mural-img w-full h-full object-cover">
+            <picture class="w-full h-full object-cover">
+  <!-- Desktop / Tablet Image (768px screens and up) -->
+  <source media="(min-width: 768px)" 
+          srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?width=700&format=webp 700w,
+                  https://cdn.shopify.com/s/files/1/0006/9556/6392/files/unsplash_mural.jpg?format=webp 985w"
+          sizes="494px">
+
+  <!-- Mobile Image (Fallback / Default) -->
+  <img 
+    src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/small_unsplash_mural.jpg?format=webp" 
+    srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/small_unsplash_mural.jpg?format=webp 400w"
+    sizes="358px"
+    width="494" 
+    height="494"
+    loading="lazy"
+    alt="Photo of brick wall saying 'How are you really?'"
+    class="mural-img w-full h-full object-cover">
+</picture>
               <!-- Desktop Gradient: Right to Left fade (transparent on the right, purple on the left) -->
 <div
   class="absolute inset-0 hidden md:block"
