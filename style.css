@@ -281,6 +281,8 @@ height: auto;
   display: grid;
       grid-template-columns: repeat(2, 1fr);
 }
+ .indie-mobile {
+  margin-left: 30px;
 }
 
 @media (min-width: 1024px) {
