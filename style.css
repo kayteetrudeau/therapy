@@ -308,3 +308,10 @@ height: auto;
 :hover\:shadow-xl{
     transition: box-shadow 0.3s ease-in-out;
 }
+.bg-\[\#f7be4e\]\/20 {
+    background-color: 
+color-mix(#f7be4e 20%, transparent);
+}
+.blur3xl {
+  filter: blur(64px);
+}
