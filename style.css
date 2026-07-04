@@ -250,6 +250,9 @@ line-height: 1.5rem}
     button.md\:hidden {
   display: none;
 }
+ .md\:hidden {
+  display: none;
+}
 .md\:text-xl {
   font-size: 1.25rem; 
 }
