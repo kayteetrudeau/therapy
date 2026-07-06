@@ -497,94 +497,12 @@
         >Contact</a
       >
     </div>
-    <style>
-      /* 1. Desktop Styles */
-      .video-container {
-        width: 100%;
-        /* This keeps the section height consistent and not "super tall" */
-        height: 70vh;
-        min-height: 500px;
-        max-height: 800px;
-        background-color: #f3a699;
-        overflow: hidden;
-        display: block;
-      }
-
-      .video-container video {
-        width: 40%;
-        height: 100%;
-        /* This stretches the video to fill the 70vh box, killing the black bars */
-        object-fit: cover;
-        /* Ensures your face stays centered if the top/bottom crops */
-        object-position: center;
-        display: block;
-      }
-
-      /* 2. Mobile Styles */
-      @media (max-width: 768px) {
-        .about-left-right,
-        .about-right-left {
-          display: block !important;
-        }
-
-        .about-right-left {
-          display: flex !important;
-          flex-direction: column-reverse !important;
-          margin-top: 60px;
-        }
-
-        .about-left-right > div,
-        .about-right-left > div {
-          width: 100% !important;
-          padding: 30px 20px !important;
-          box-sizing: border-box !important;
-        }
-
-        .video-container {
-          width: 90% !important;
-          height: auto !important; /* Let it be natural height on mobile */
-          min-height: 0 !important;
-          max-height: none !important;
-          padding: 0 !important;
-          margin: 1rem auto;
-        }
-
-        .video-container video {
-          width: 100% !important;
-          height: auto !important;
-          aspect-ratio: 9 / 16 !important;
-          object-fit: cover !important;
-        }
-        h2, h2 + span{text-align: center;}
-      }
-    </style>
     <main
-      class="relative overflow-hidden"
+      class="relative overflow-hidden about-main"
       style="background-color: #f3a699;
-      color: #3b0764;
-      top: 4.75rem;"
+      color: #3b0764;"
     >
-    <style>
-    /* Desktop layout using Grid instead of Flex */
-    .about-grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      width: 100%;
-    }
-    .responsive-bg-image {
-      background-image: url("https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_in_office.jpg?width=1200&format=webp");
-    }
     
-    /* Mobile responsive shift */
-    @media (max-width: 600px) {
-      .about-grid-container {
-        grid-template-columns: 1fr;
-      }
-      .responsive-bg-image {
-        background-image: url("https://cdn.shopify.com/s/files/1/0006/9556/6392/files/kaytee_in_office.jpg?width=400");
-      }
-    }
-  </style>
 <div class="about-grid-container">
           <div style="width: 100%; padding: 20px 20px 0px 20px; display: flex;">
          <div class="responsive-bg-image" fetchpriority="high" style="
@@ -608,7 +526,7 @@ width: 100%;
         >
           <h2
             class="text-5xl font-headline font-bold mb-12"
-            style="color: #eb4677; -webkit-text-stroke: 1px white"
+            style="color: #eb4677; -webkit-text-stroke: 1px white; padding: 0;"
           >
             About Kaytee
           </h2>
