@@ -606,9 +606,7 @@ a.resource-pill:hover {
     margin-bottom: .75rem;
     margin-left: 1rem;
 }
-.why-so-hard h1 {
-    padding: 0 170px 20px 170px;
-}
+
 h2 {
     padding: 0 275px 10px 275px;
 }
@@ -1777,4 +1775,7 @@ h2 {
     .bento-container {
         max-height: 650px;
     }
+    .why-so-hard h1 {
+    padding: 0 170px 20px 170px;
+}
 }
