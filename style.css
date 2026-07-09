@@ -10,13 +10,6 @@
 }
 
 @font-face {
-    font-family: 'Cooper Five Opti Black';
-    src: url(https://cdn.shopify.com/s/files/1/0006/9556/6392/files/CooperFiveOpti-Black.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: 'Boska Black';
     src: url(https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Boska-Black.woff2) format('woff2');
     font-style: normal;
@@ -434,11 +427,6 @@ body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8
 .transition-transform {
     transition-property: transform;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-}
-@font-face {
-    font-family: 'Boska Black';
-    src: url(https://cdn.shopify.com/s/files/1/0006/9556/6392/files/CooperFiveOpti-Black.woff2) format('woff2');
-    font-display: swap;
 }
 body {
     font-family: Fraunces, serif;
