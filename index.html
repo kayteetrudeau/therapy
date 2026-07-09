@@ -2,7 +2,6 @@
 
 <html lang="en">
   <head>
-  <!-- 1. Inline just the core layout wrappers so the browser structures the grid instantly -->
 <!doctype html>
 <html lang="en">
   <head>
@@ -84,7 +83,7 @@
 
       <!-- Hero Section with wavy bottom -->
 <section
-  class="hero-section relative mb-10 overflow-hidden"
+  class="hero-section relative overflow-hidden"
   style="background-color: #ffe1a5; min-height: auto;"
 >
   <!-- Wavy background -->
@@ -166,10 +165,10 @@
 </div>
   
 </section>
-      <div class="mobile-p-flex">
+      <div class="mobile-p-flex max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch pb-12">
         <p
           class="mobile-p text-lg leading-relaxed desktop-hide"
-          style="text-align: center; width: 90%; margin: auto"
+          style="text-align: center;"
         >
           Experience being authentically you in a completely nonjudgmental space
           with a fellow neurodivergent (AuDHD), perimenopausal woman who gets
@@ -186,9 +185,9 @@
         <!-- Card 1 wrapper -->
         <div class="purple-cards md:col-span-12 transition-all duration-500">
           <div
-            class="bento-container bento-container1 group relative flex flex-col bg-surface-container rounded-[3rem] h-auto md:h-[350px] overflow-hidden transition-all duration-500"
+            class="bento-container bento-container1 text-white relative flex flex-col bg-surface-container rounded-[3rem] h-auto md:h-[350px] overflow-hidden transition-all duration-500"
             style="
-              border: 3px solid #3b0764;
+              border: 3px solid #333333;
               background-image: url('https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Normancopy_1000x.jpg?format=webp');
               background-position: center;
               background-size: cover;
@@ -201,7 +200,6 @@
               <div class="indie justify-center align-center mb-6">
                 <h3
                   class="text-5xl font-headline text-center font-bold mb-2"
-                  style="color: #f7be4e; -webkit-text-stroke: 0.5px white"
                 >
                   The TL;DR
                 </h3>
@@ -213,7 +211,7 @@
               </p>
               <a
                 href="/about.html"
-                class="btn-gradient py-5 text-center rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
+                class="btn-gradient py-5 text-center rounded-full font-bold text-white"
                 style="display: block; width: 16rem; margin: 0 auto; font-size: 1.25em;"
               >
                 Learn more here
@@ -224,8 +222,8 @@
 
         <!-- Card 2 wrapper -->
         <div class="purple-cards md:col-span-12 transition-all duration-500">
-           <div class="bento-container group relative flex flex-col md:flex-row-reverse bg-surface-container-high rounded-[3rem] overflow-hidden transition-all duration-500" 
-     style="border: 3px solid #3b0764;">
+           <div class="bento-container relative flex flex-col md:flex-row-reverse bg-surface-container-high rounded-[3rem] overflow-hidden " 
+     style="border: 3px solid #333333;">
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden flex items-center justify-center md:justify-end"
             >
@@ -237,7 +235,7 @@
 
   <!-- Mobile Image (Fallback / Default for under 601px) -->
   <img alt="Vibe check with Kaytee Trudeau laughing" 
-       class="consult-img transition-transform duration-1000 group-hover:scale-110" 
+       class="consult-img" 
        src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Kaytee_rhino.jpg?format=webp" 
        srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Kaytee_rhino.jpg?format=webp 400w" 
        sizes="360px" 
@@ -247,28 +245,15 @@
        height="494"
   />
 </picture>
-              <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
-            <div
-              class="absolute inset-0 hidden md:block"
-              style="background-image: linear-gradient(to left, transparent, rgb(59, 7, 100));"
-            ></div>
-
-            <!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
-            <div
-              class="absolute inset-0 md:hidden"
-              style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
-            ></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div class="mb-8">
                 <h3
-                  class="text-5xl font-headline font-bold mb-4"
-                  style="color: #f7be4e; -webkit-text-stroke: 0.5px white"
-                >
+                  class="text-5xl font-headline font-bold mb-4"                >
                   Vibe Check
                 </h3>
               </div>
-              <p class="mb-10 text-xl leading-relaxed" style="color: #ffffff">
+              <p class="mb-10 text-xl leading-relaxed" style="color: #333333">
                 Want to do a free consult before committing to a full session?
                 Book in for a free 20 minutes to see if we're a good fit.
               </p>
@@ -276,33 +261,27 @@
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Quick</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Confidential</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                  border-color: var(--color-black);
                   "
                   >Virtual</span
                 >
               </div>
               <a
-                class="button-mob text-center btn-gradient py-5 rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
+                class="button-mob text-center btn-gradient btn-gradient-menu py-5 rounded-full font-bold"
                 href="book-a-session.html" style="font-size: 1.25em;"
               >
                 Book a Free Consult
@@ -314,8 +293,8 @@
         <!-- Card 3 wrapper -->
 
         <div class="purple-cards md:col-span-12 transition-all duration-500">
-           <div class="bento-container group relative flex flex-col md:flex-row bg-surface-container-high rounded-[3rem] overflow-hidden transition-all duration-500" 
-     style="border: 3px solid #3b0764;">
+           <div class="bento-container relative flex flex-col md:flex-row bg-surface-container-high rounded-[3rem] overflow-hidden" 
+     style="border: 3px solid #333333;">
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden"
             >
@@ -337,24 +316,12 @@
     alt="Photo of brick wall saying 'How are you really?'"
     class="mural-img w-full h-full object-cover">
 </picture>
-              <!-- Desktop Gradient: Right to Left fade (transparent on the right, purple on the left) -->
-<div
-  class="absolute inset-0 hidden md:block"
-  style="background-image: linear-gradient(to right, transparent, rgb(59, 7, 100));"
-></div>
-
-<!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
-<div
-  class="absolute inset-0 md:hidden"
-  style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
-></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div class="indie flex justify-between mb-6">
                 <div>
                   <h3
                     class="text-5xl font-headline font-bold mb-2"
-                    style="color: #f7be4e; -webkit-text-stroke: 0.5px white"
                   >
                     Individual Therapy
                   </h3>
@@ -362,23 +329,21 @@
                 <div class="text-right indie-mobile">
                   <span
                     class="block text-3xl font-headline font-bold"
-                    style="color: #ffffff"
                     >$125</span
                   >
-                  <span class="text-xs" style="color: #ffffff"
+                  <span class="text-xs" 
                     >for 50 minutes</span
                   >
                   <span
                     class="block text-3xl font-headline font-bold"
-                    style="color: #ffffff"
                     >$170</span
                   >
-                  <span class="text-xs" style="color: #ffffff"
+                  <span class="text-xs" 
                     >for 80 minutes</span
                   >
                 </div>
               </div>
-              <p class="mb-8 text-xl leading-relaxed" style="color: #ffffff">
+              <p class="mb-8 text-xl leading-relaxed">
                 A conversation focused entirely on you - how often do you get to
                 have those? Practical strategies when required. Direct,
                 empathetic, and at your pace.
@@ -387,34 +352,28 @@
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Flexible schedule</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Strengths-based</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Non-judgmental</span
                 >
               </div>
               <a
                 href="book-a-session.html"
-                class="button-mob btn-gradient py-5 text-center rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
+                class="button-mob btn-gradient btn-gradient-menu py-5 text-center rounded-full font-bold text-white"
                 style="font-size: 1.25em;"
                 >
                 Book a Session
@@ -425,8 +384,8 @@
 
         <!-- Card 4 wrapper -->
         <div class="purple-cards md:col-span-12 transition-all duration-500">
-          <div class="bento-container group relative flex flex-col md:flex-row-reverse bg-surface-container-high rounded-[3rem] overflow-hidden transition-all duration-500" 
-     style="border: 3px solid #3b0764;">
+          <div class="bento-container relative flex flex-col md:flex-row-reverse bg-surface-container-high rounded-[3rem] overflow-hidden" 
+     style="border: 3px solid #333333;">
             <div
               class="w-full md:w-1/2 relative h-64 bento md:h-auto overflow-hidden flex items-center justify-center md:justify-end"
             >
@@ -439,7 +398,7 @@
 
   <!-- Mobile Image (Fallback / Default for under 601px) -->
   <img alt="Couples therapy - holding hands" 
-       class="consult-img transition-transform duration-1000 group-hover:scale-110" 
+       class="consult-img transition-transform duration-1000" 
        src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_small2.jpg?width=400&format=webp" 
        srcset="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/couples_hands_small2.jpg?width=400&format=webp 400w" 
        sizes="384px" 
@@ -448,17 +407,6 @@
        width="494" 
        height="494">
 </picture>
-              <!-- Desktop Gradient: Left to Right fade (transparent on the right, purple on the left) -->
-<div
-  class="absolute inset-0 hidden md:block"
-  style="background-image: linear-gradient(to left, transparent, rgb(59, 7, 100));"
-></div>
-
-<!-- Mobile Gradient: Top to Bottom fade (transparent at the top, purple at the bottom) -->
-<div
-  class="absolute inset-0 md:hidden"
-  style="background-image: linear-gradient(to top, rgb(59, 7, 100), transparent);"
-></div>
             </div>
             <div class="md:w-1/2 p-12 flex flex-col justify-center">
               <div
@@ -467,22 +415,20 @@
               >
                 <h3
                   class="text-5xl font-headline font-bold mb-4"
-                  style="color: #f7be4e; -webkit-text-stroke: 0.5px white"
                 >
                   Couples Therapy
                 </h3>
                 <div class="text-right indie-mobile2">
                   <span
                     class="block text-3xl font-headline font-bold"
-                    style="color: #ffffff"
                     >$220</span
                   >
-                  <span class="text-xs" style="color: #ffffff"
+                  <span class="text-xs" 
                     >for 80 minutes</span
                   >
                 </div>
               </div>
-              <p class="mb-10 text-xl leading-relaxed" style="color: #ffffff">
+              <p class="mb-10 text-xl leading-relaxed">
                 Having trouble communicating with your partner? Feeling like
                 you're on different - maybe neurotypical and neurodivergent - wavelengths? Let's work to improve
                 understanding and connection. <br />Book in for a free 20 minute
@@ -492,33 +438,27 @@
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Non-judgmental</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Virtual</span
                 >
                 <span
                   class="px-4 py-1.5 rounded-full text-sm font-medium border italic"
                   style="
-                    background: rgba(255, 255, 255, 0.1);
-                    border-color: rgba(235, 70, 119, 0.5);
-                    color: #ffb3cc;
+                    border-color: var(--color-black);
                   "
                   >Inclusive</span
                 >
               </div>
               <a
-                class="button-mob text-center btn-gradient py-5 rounded-full font-bold text-white shadow-lg hover:shadow-xl transition-all transform"
+                class="button-mob text-center btn-gradient btn-gradient-menu py-5 rounded-full font-bold text-white transition-all transform"
                 href="book-a-session.html"
                 style="font-size: 1.25em;"
               >
