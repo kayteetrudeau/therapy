@@ -34,24 +34,7 @@
     />
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <script>
-      function openMobileMenu() {
-        document.getElementById('mobileMenu').classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-      function closeMobileMenu() {
-        document.getElementById('mobileMenu').classList.remove('open');
-        document.body.style.overflow = '';
-      }
-      function toggleSection(id) {
-        const section = document.getElementById(id);
-        const chevron = document.getElementById(id + '-chevron');
-        const isOpen = section.style.display === 'flex';
-        section.style.display = isOpen ? 'none' : 'flex';
-        chevron.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
-      }
-    </script>
-
+   <script src="/js/mobile-menu.js"></script>
   </head>
   <body class="bg-white font-body selection:bg-tertiary/30">
     <div id="header-placeholder"></div>
