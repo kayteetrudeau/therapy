@@ -1805,7 +1805,7 @@ h2 {
 
 .hero-text-wrapper {
   width: 100%;
-  text-align: right;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1819,6 +1819,6 @@ h2 {
   }
   .hero-text-wrapper {
     width: 65%;
-    text-align: center;
+    text-align: right;
   }
 }
