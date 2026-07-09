@@ -1,5 +1,5 @@
 :root {
-    --color-purple-deep: #333333;
+    --color-black: #333333;
     --color-purple-light: #f3e7fd;
     --color-pink: #eb4677;
     --color-yellow: #f7be4e;
@@ -58,9 +58,9 @@
 }
 
 .bento-container {
-    background-color: var(--color-purple-deep);
+    background-color: var(--color-black);
     border-radius: 3rem;
-    border: 3px solid var(--color-purple-deep);
+    border: 3px solid var(--color-black);
     transition: var(--transition);
     color: #fff;
 }
@@ -228,7 +228,7 @@ body {
     font-size: 1rem;
 }
 .nav-link {
-    color: #3b0764;
+    color: --color-black;
     font-weight: 500;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
@@ -435,7 +435,7 @@ body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8
 }
 body {
     font-family: Fraunces, serif;
-    color: var(--color-purple-deep);
+    color: var(--color-black);
 }
 a.button-mob {
     width: max-content;
