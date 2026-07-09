@@ -245,16 +245,7 @@ body {
     border-color: #f7be4e;
     font-weight: 700;
 }
-.btn-gradient {
-    background: padding-box #eb4677;
-    border: 2px solid #fff;
-    transition: .3s;
-}
-.btn-gradient:hover {
-    background: 0 0;
-    border: 2px solid #eb4677;
-    color: #eb4677;
-}
+
 .card-shadow::before {
     border-radius: 3rem;
     border: 1px solid rgba(255, 255, 255, .3);
