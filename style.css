@@ -2,7 +2,7 @@
     --color-black: #333333;
     --color-purple-light: #f3e7fd;
     --color-pink: #eb4677;
-    --color-yellow: #f7be4e;
+    --color-yellow: #ffe1a5;
     --color-white: #ffffff;
     --font-headline: 'Boska Black', serif;
     --font-body: 'Boska Regular', serif;
@@ -68,20 +68,25 @@
     transform: translateY(-5px);
 }
 .btn-gradient {
-    background: var(--color-pink);
+    background: padding-box transparent;
+    border: 2px solid #333333;
+    transition: .3s;
     padding: 1.25rem 2.5rem;
     border-radius: 9999px;
     font-weight: 700;
     text-align: center;
     display: inline-block;
-    color: #fff;
+    color: #ffe1a5;
     transition: var(--transition);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
     text-decoration: none;
 }
+.btn-gradient-menu {
+    color: #333333;
+}
 .btn-gradient:hover {
-    border: 2px solid var(--color-pink);
-    color: var(--color-pink);
+    border: 2px solid var(--color-yellow);
+    color: var(--color-yellow);
     transform: scale(1.05);
 }
 .category-pill {
