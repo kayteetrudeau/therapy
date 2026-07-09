@@ -1796,19 +1796,11 @@ h2 {
   box-sizing: border-box;
 }
 
-/* Desktop layout (30/70 split) */
-@media (min-width: 768px) {
-  .hero-content-container {
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 80px 54px 128px 54px; 
-  }
-}
-
 /* Targeting the children inside */
 .hero-image-wrapper {
-  width: 100%;
+  width: 90%;
   flex-shrink: 0;
+  margin: auto;
 }
 
 .hero-text-wrapper {
@@ -1817,11 +1809,16 @@ h2 {
 }
 
 @media (min-width: 768px) {
+.hero-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 54px 128px 54px; 
+  }
   .hero-image-wrapper {
-    width: 30%;
+    width: 35%;
   }
   .hero-text-wrapper {
-    width: 70%;
+    width: 65%;
     text-align: center;
   }
 }
