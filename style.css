@@ -1,11 +1,11 @@
 :root {
-    --color-purple-deep: #3b0764;
+    --color-purple-deep: #333333;
     --color-purple-light: #f3e7fd;
     --color-pink: #eb4677;
     --color-yellow: #f7be4e;
     --color-white: #ffffff;
-    --font-headline: 'Cooper Five Opti Black', cursive;
-    --font-body: 'Fraunces', serif;
+    --font-headline: 'Boska Black', serif;
+    --font-body: 'Boska Regular', serif;
     --transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -178,7 +178,6 @@ main {
     
     .mobile-p { 
         background: #fff; 
-        color: #3b0764 !important; 
         padding: 1.25rem; 
         border-radius: 2rem; 
         border: 2px solid #f7be4e; 
