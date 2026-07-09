@@ -152,7 +152,7 @@ a.resource-pill:hover {
     max-width: 100%;
 }
 .font-headline, .logo-text, .mobile-menu-top-link, .nav-link {
-    font-family: 'Cooper Five Opti Black', cursive !important;
+    font-family: 'Boska Black', serif !important;
 }
 .sparkle {
     pointer-events: none;
@@ -232,6 +232,7 @@ body {
     font-weight: 500;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
+     font-size: 1.4rem;
     transition: .2s;
 }
 .nav-link:hover {
