@@ -125,8 +125,11 @@ a.resource-pill:hover {
     transition: background .15s;
     padding: .75rem 1rem;
 }
+.dropdown-item {
+  transition: font-weight 0.2s ease;
+}
 .dropdown-item:hover {
-    background-color: var(--color-yellow) !important;
+  font-weight: bold;
 }
 .about-grid-container {
     display: grid;
