@@ -186,19 +186,9 @@ main {
     .mobile-p-flex { display: flex; justify-content: center; }
     .hero-section { margin-bottom: 0 !important; }
     .indie-mobile { display: flex; margin-top: 15px; justify-content: center; text-align: center;}
-    .text-xs { padding-left: 10px; margin-right: 8px; }
+    .text-xs {margin-right: 8px; }
     .purple-cards { text-align: center; }
     .button-mob { padding: 20px; }
-    a.button-mob { width: max-content; margin: auto; }
-    .about-p { width: 25rem; }
-    
-    .mobile-menu-top-link {
-        display: block !important;
-        font-family: 'Boska Black', cursive !important;
-        font-size: 2rem;
-        color: #333333 !important;
-        text-decoration: none;
-    }
     .about-grid-container {
         grid-template-columns: 1fr;
     }
@@ -215,7 +205,7 @@ body {
 }
 .nav-link {
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: 700;
     border-bottom: 2px solid transparent;
     padding-bottom: 4px;
      font-size: 1.4rem;
@@ -254,7 +244,6 @@ body {
     align-items: center;
     padding-top: 8rem;
     justify-content: flex-start;
-    gap: 2rem;
 }
 .mobile-menu.open {
     display: flex;
@@ -350,9 +339,7 @@ body>main>section.hero-section.relative.mb-10>div.title-text.relative.z-10.max-w
 body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12>div:nth-child(2)>div>div.md\:w-1\/2.p-12.flex.flex-col.justify-center>div.indie.flex.justify-between.mb-6>div.text-right.indie-mobile>span:nth-child(2), body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8.items-stretch.pb-12>div:nth-child(2)>div>div.md\:w-1\/2.p-12.flex.flex-col.justify-center>div.indie.flex.justify-between.mb-6>div.text-right.indie-mobile>span:nth-child(3) {
     margin-right: 5px;
 }
-.purple-cards {
-    text-align: center;
-}
+
 .about-p {
     width: 20rem;
 }
@@ -366,12 +353,10 @@ body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8
     margin-right: 0!important;
     padding-left: 0!important;
 }
-.button-mob {
-    padding: 20px;
-}
 .mobile-menu-top-link {
     display: block!important;
     font-family: 'Fraunces', serif;
+    font-weight: 700;
     font-size: 2rem;
     color: #333333!important;
     text-decoration: none;
