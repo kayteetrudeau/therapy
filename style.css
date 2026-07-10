@@ -158,7 +158,7 @@ main {
 .index-main {
   padding-top: 0;
 }
-.mobile-p {
+.mobile-p, .mobile-p-flex {
   display: none;
 }
 }
