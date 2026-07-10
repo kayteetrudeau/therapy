@@ -503,7 +503,8 @@ a.resource-pill:hover {
     color: #fff;
     padding: .75rem 2rem;
     border-radius: 9999px;
-    font-family: 'Boska Black', serif;
+    font-family: 'Farunces', serif;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 2rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
