@@ -144,7 +144,7 @@ a.resource-pill:hover {
     vertical-align: middle;
     max-width: 100%;
 }
-.font-headline, .logo-text, .mobile-menu-top-link, .nav-link {
+.font-headline {
     font-family: 'Boska Black', serif !important;
 }
 .sparkle {
@@ -220,6 +220,7 @@ body {
     padding-bottom: 4px;
      font-size: 1.4rem;
     transition: .2s;
+    font-family: 'Fraunces', serif;
 }
 .nav-link:hover {
     color: #eb4677;
@@ -370,7 +371,7 @@ body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8
 }
 .mobile-menu-top-link {
     display: block!important;
-    font-family: 'Boska Black', serif!important;
+    font-family: 'Fraunces', serif;
     font-size: 2rem;
     color: #333333!important;
     text-decoration: none;
