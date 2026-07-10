@@ -155,48 +155,14 @@ class="absolute -top-24 -right-24 w-48 h-48 bg-[#f7be4e]/20 rounded-full blur-3x
         </div>
       </div>
     </main>
-
-    <footer>
-      <div
-        class="footer-wave mt-4 relative pt-20 overflow-hidden"
-      >
-        <div
-          style="
-            position: absolute;
-            top: -2px;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-          "
-        >
-          <svg
-            viewBox="0 0 1440 80"
-            preserveAspectRatio="none"
-            xmlns="http://www.w3.org/2000/svg"
-            style="display: block; width: 100%"
-          >
-            <path
-              d="M0,40 C180,0 360,80 540,40 C720,0 900,80 1080,40 C1260,0 1350,60 1440,40 L1440,0 L0,0 Z"
-              fill="#ffffff"
-            />
-          </svg>
-        </div>
-        <div
-          class="font-label text-center text-xs p-4"
-          style="color: rgb(59 7 100 / 0.95)"
-        ><div style="margin-bottom: 5px">
-          <span>All are welcome here</span
-          ><img
-            src="https://cdn.shopify.com/s/files/1/0006/9556/6392/files/Inclusive-Pride-Flag.png?format=100webp&width=50"
-            alt="Inclusive Pride Flag"
-            style="display: inline-block; height: 12px; margin: 0 4px"
-          />
-        </div>
-          ©2026 Kaytee Trudeau, Registered Psychotherapist (Qualifying) #20562.
-          All Rights Reserved.
-        </div>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
+<script>
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+  
   </body>
 </html>
