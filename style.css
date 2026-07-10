@@ -86,18 +86,6 @@
 .btn-gradient:hover {
     transform: scale(1.05);
 }
-.category-pill {
-    display: inline-block;
-    background-color: #3b0764;
-    color: #fff;
-    padding: .75rem 2rem;
-    border-radius: 9999px;
-    font-family: 'Boska Black', serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
-}
 .resource-pill {
     display: flex;
     flex-direction: column;
@@ -202,7 +190,6 @@ main {
         display: block !important;
         font-family: 'Boska Black', cursive !important;
         font-size: 2rem;
-        font-style: italic;
         color: #333333 !important;
         text-decoration: none;
     }
@@ -379,7 +366,6 @@ body>main>section.max-w-7xl.mx-auto.px-6.grid.grid-cols-1.md\:grid-cols-12.gap-8
     display: block!important;
     font-family: 'Boska Black', serif!important;
     font-size: 2rem;
-    font-style: italic;
     color: #333333!important;
     text-decoration: none;
 }
@@ -481,18 +467,6 @@ input, textarea {
     border: 1px solid rgba(243, 166, 153, .2);
     background-color: rgb(243 231 253 / .3);
 }
-.category-pill {
-    display: inline-block;
-    background-color: #3b0764;
-    color: #fff;
-    padding: .75rem 2rem;
-    border-radius: 9999px;
-    font-family: 'Boska Black', serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    margin-bottom: 2rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
-}
 .resource-pill {
     display: flex;
     flex-direction: column;
@@ -539,7 +513,6 @@ a.resource-pill:hover {
     border-radius: 9999px;
     font-family: 'Boska Black', serif;
     font-size: 1.5rem;
-    font-style: italic;
     margin-bottom: 2rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
 }
