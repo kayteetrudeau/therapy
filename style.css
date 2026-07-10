@@ -1772,4 +1772,7 @@ h2 {
     width: 65%;
     text-align: right;
   }
+  .indie-mobile2 {
+    justify-content: space-between;
+    }
 }
