@@ -153,7 +153,7 @@ a.resource-pill:hover {
 @media (min-width: 769px) {
     .desktop-hide { display: none; }
 main {
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
 .index-main {
   padding-top: 0;
