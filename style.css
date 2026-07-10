@@ -178,7 +178,7 @@ main {
     .mobile-hide { display: none; }
     .bento-container { max-height: auto !important; }
     .indie { align-items: flex-start; flex-direction: column; align-items: center; }
-  
+    .indie-mobile2 {text-align: center;)
     .mobile-title-nd { 
         display: block !important; 
         text-align: center !important; 
@@ -1799,4 +1799,7 @@ h2 {
     width: 65%;
     text-align: right;
   }
+.indie-mobile2 {
+    text-align: right;
+}
 }
