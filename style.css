@@ -1771,6 +1771,6 @@ h2 {
     height: 100px; 
 }
 }
-.why-so-hard a {
-    color: var(--color-pink);
+.why-so-hard p a {
+    color: var(--color-pink) !important;
 }
